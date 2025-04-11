@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background-color: hsl(234, 29%, 20%);
+  font-family: "Roboto";
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.updated {
+  background-color: white;
+  padding: 10px 10px 10px 40px;
+  width: 600px;
+  display: flex;
+  border-radius: 10px;
+  gap: 2rem;
+  font-size: 13px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.updated-container {
+  display: flex;
+  
+ 
+}
+
+.stay {
+  font-size: 30px;
+  color: hsl(235, 18%, 26%); 
+}
+
+.join {
+  margin-top: -5px;
+}
+
+.sign-up-pic {
+  height: auto; 
+  width: 50%; 
+  display: block;
+}
+
+.sign-up-pic img {
+  display: block; 
+  max-width: 100%; 
+  height: auto;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color:  hsl(235, 18%, 26%); 
+  font-weight: bold;
+}
+
+
+
+.email-input {
+margin-bottom: 10px;
+width: 270px;
+padding: 10px;
+border-radius: 5px;
+border: 1px solid;
+
+}
+
+.email-input:active{
+  cursor: pointer;
+}
+
+#email {
+  border-color: hsl(0, 0%,58%);
+}
+.submit-button{
+  width: 293px;
+  background-color: hsl(234, 29%, 20%);
+  color: #fff;
+  padding: 13px;
+  border-radius: 5px;
+  border: 1px solid;
+  font-weight: bold;
+}
+
+.submit-button:active, .dismiss-button:active {
+  background-color:  hsl(4, 100%, 67%);
+  cursor: pointer;
+  transition: background-color 0.1s ease
+}
+
+.label-error {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 290px;
+  margin-bottom: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+}
+
+.thank-you {
+  display: none;
+}
+
+.success-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  margin: 0 auto;
+  width: 275px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.confirm {
+  font-size: 13px;
+  margin-top: 0;
+}
+
+.thanks {
+  margin-bottom: 10px;
+  font-size: 35px;
+  color: hsl(235, 18%, 26%);
+}
+
+.icon-success {
+  width: 20%;
+  height: 20%;
+}
+
+.dismiss-button {
+  background-color: hsl(234, 29%, 20%);
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid;
+  font-weight: bold;
+  padding: 13px;
+  margin-top: 10px;
+}
+
+#userEmail {
+  color: hsl(235, 18%, 26%);
+  font-weight: bold;
+}
+
+.sign-up-pic-mobile {
+  display: none;
+}
+
+/* MOBILE VIEW */
+
+@media(max-width: 768px) {
+  body {
+    background-color: hsl(234, 29%, 20%);
+    font-family: "Roboto";
+    display: flex;
+  }
+
+    .sign-up-pic {
+    display: none;
+  }
+
+  .sign-up-pic-mobile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .sign-up-pic-mobile img {
+    width: 100%;
+    object-fit: cover;
+    
+  }
+
+
+  .text {
+    padding: 20px;
+  }
+
+  .updated {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    font-size: 13px;
+    max-width: 280px;
+    padding: 0;
+  }
+
+  .updated-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+  }
+
+  .email-input {
+    width: 90%;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+
+
+  .success-container {
+    width: 250px;
+   
+  }
+
+  .label-error {
+  
+    width: 237px;
+  }
+  
+
+
+}
