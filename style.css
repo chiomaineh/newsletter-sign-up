@@ -196,6 +196,7 @@ form {
   .sign-up-pic-mobile img {
     width: 100%;
     object-fit: cover;
+    margin-top: 3px;
     
   }
 
@@ -210,7 +211,7 @@ form {
     flex-direction: column;
     border-radius: 10px;
     font-size: 13px;
-    max-width: 295px;
+    max-width: 289px;
     padding: 0;
   }
 
